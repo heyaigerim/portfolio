@@ -835,6 +835,10 @@ main {
   margin-bottom: 8px;
 }
 
+.no-bullets .timeline-item::before {
+  display: none;
+}
+
 
 /**
  * skills 
@@ -1051,6 +1055,12 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
+
+
+  
+
+
+
 
 
 
