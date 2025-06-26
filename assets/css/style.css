@@ -1966,21 +1966,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
 /* Beyond the Resume hover effect */
-.masonry-gallery {
-  margin-top: 30px;
-}
 
 .masonry-grid {
   column-count: 2;
   column-gap: 20px;
+  max-width: 100%;
 }
 
 .masonry-item {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
   background: var(--border-gradient-onyx);
   border-radius: 12px;
-  margin-bottom: 20px;
   display: inline-block;
-  width: 100%;
+  break-inside: avoid;
   box-shadow: var(--shadow-2);
   overflow: hidden;
 }
@@ -1989,6 +1989,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
   border-radius: 12px 12px 0 0;
 }
 
@@ -1999,6 +2000,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: var(--fw-300);
   line-height: 1.5;
 }
+
+.beyond {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 
 @media (max-width: 768px) {
   .masonry-grid {
