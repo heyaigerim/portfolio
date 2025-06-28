@@ -1967,53 +1967,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Beyond the Resume hover effect */
 
+.masonry-gallery {
+  padding: 24px;
+}
+
 .masonry-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 .masonry-item {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-  background: var(--border-gradient-onyx);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--oxford-blue);
   border-radius: 12px;
-  display: inline-block;
-  break-inside: avoid;
-  box-shadow: var(--shadow-2);
   overflow: hidden;
-}
-
-.masonry-caption {
-  padding: 12px;
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.5;
-}
-
-.beyond {
-  max-width: 960px;
-  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .masonry-item img {
   width: 100%;
-  aspect-ratio: 4 / 3; /* or 3 / 2 if you want taller */
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
-  max-width: 100%;
   border-radius: 12px 12px 0 0;
 }
 
-
 .masonry-caption {
-  padding: 12px;
+  padding: 16px;
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
   line-height: 1.5;
-  min-height: 60px;
 }
+
 
