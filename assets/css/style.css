@@ -1968,9 +1968,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Beyond the Resume hover effect */
 
 .masonry-grid {
-  column-count: 2;
-  column-gap: 20px;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .masonry-item {
@@ -2005,6 +2005,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 960px;
   margin: 0 auto;
 }
+
+.masonry-item img {
+  width: 100%;
+  height: 240px; /* fix height */
+  object-fit: cover; /* crop to fit container */
+  display: block;
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
 
 
 @media (max-width: 768px) {
