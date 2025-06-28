@@ -2000,12 +2000,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .masonry-item img {
   width: 100%;
-  height: 240px; /* fix height */
-  object-fit: cover; /* crop to fit container */
+  aspect-ratio: 4 / 3; /* or 3 / 2 if you want taller */
+  object-fit: cover;
   display: block;
   max-width: 100%;
   border-radius: 12px 12px 0 0;
 }
+
 
 .masonry-caption {
   padding: 12px;
