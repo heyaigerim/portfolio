@@ -1988,7 +1988,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .beyond-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 200px;
   object-fit: cover;
   display: block;
 }
